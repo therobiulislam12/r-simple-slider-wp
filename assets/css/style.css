@@ -1,0 +1,30 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: darkcyan;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.jR3DCarouselGallery,
+.jR3DCarouselGalleryCustomeTemplate {
+  margin: 0 auto; /* optional - if want to center align */
+}
+
+.jR3DCarouselGalleryCustomeTemplate .captions {
+  position: relative;
+  padding: 4px 0;
+  bottom: 27px;
+  background: #ec1c8e;
+  display: block;
+}
+.jR3DCarouselGalleryCustomeTemplate a {
+  text-decoration: none;
+}
+
+.jR3DCarouselGalleryCustomeTemplate .controls {
+  font-size: 24px !important;
+  color: white !important;
+  background: #179BAE !important;
+  padding: 5px 10px !important;
+}
