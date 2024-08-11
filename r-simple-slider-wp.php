@@ -18,7 +18,7 @@ class R_simple_slider_wp {
     public function __construct() {
 
         // short code
-        add_shortcode( 'Slider', [$this, 'ss_shortcode'] );
+        add_shortcode( 'simple-slider', [$this, 'ss_shortcode'] );
 
         // activation hook
         register_activation_hook( __FILE__, [$this, 'active'] );
