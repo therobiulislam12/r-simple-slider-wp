@@ -26,7 +26,7 @@ if ( isset( $_POST['settings_save'] ) ) {
                     <label for="slider-design"><?php _e( ' Copy Short Code :', 'ss_slider' );?></label>
                 </th>
                 <td>
-                    <p> [ simple-slider ] </p>
+                    <p> [simple-slider] </p>
                 </td>
             </tr>
 
