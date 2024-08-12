@@ -16,6 +16,6 @@ The second problem I faced was trying to pass data to my JavaScript file, but I 
 Now my project is done, but I learned even more things along the way.
 
 ## Next Plan
-    1. Improve feature
-    2. Make it with full OOP
-    3. More readable
+    1. Improve feature - 2 feature added 1. Meta field and 2. thumbnail show
+    2. Make it with full OOP - without composer work
+    3. More readable - create some comment for read
