@@ -19,9 +19,15 @@ class Menu {
         foreach($columns as $key => $column ){
 
 
-            if ( 'title' == $key ) {
+            if ( 'cb' == $key ) {
                 $new_columns[$key] = $column;
                 $new_columns['slider_image'] = 'Slider Image';
+                continue;
+            }
+
+            if ( 'title' == $key ) {
+                $new_columns[$key] = $column;
+                $new_columns['slider_serial'] = 'Serial No';
                 continue;
             }
 
@@ -38,6 +44,14 @@ class Menu {
                 echo get_the_post_thumbnail($post_id, array(100, 100));
             } else {
                 echo 'No Image';
+            }
+        }
+
+        if('slider_serial' === $col) {
+            if(has_post_thumbnail($post_id)){
+                echo get_post_meta($post_id, '_slider_serial', true);
+            } else {
+                echo ' ';
             }
         }
     }
