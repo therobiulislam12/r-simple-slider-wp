@@ -26,11 +26,26 @@ class R_simple_slider_wp {
         // init hook
         add_action( 'init', array( $this, 'ss_register_slider_post_type' ) );
 
+        // initialize plugin
+        add_action('init', array( $this, 'initialize' ));
+
         // Script added hook
         add_action( 'wp_enqueue_scripts', [$this, 'ss_action_wp_enqueue_scripts'] );
 
         // Submenu added hook
         add_action( 'admin_menu', array( $this, 'ss_register_sub_menu' ) );
+    }
+
+    /**
+     * Initial function
+     * @return mixed
+     */
+    public function initialize(){
+        $menu_column = require_once __DIR__ . '/admin/Menu.php';
+        $menu_column = require_once __DIR__ . '/admin/Custom_Meta_Box.php';
+
+        new Menu();
+        new Custom_Meta_Box();
     }
 
     /**
